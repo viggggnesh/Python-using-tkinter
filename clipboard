@@ -1,0 +1,20 @@
+# save logs
+def save():
+    f = open('LOG.txt', 'w')
+    s = v1.get()+'\n'+v2.get()+'\n'+v3.get()+'\n'+v4.get()+'\n'+v5.get()+'\n'+v6.get()+'\n'+v7.get()+'\n'+v8.get()+'\n'+v.get()+'\n'+var.get()+'\n'+var1.get()+'\n'+log.get()
+    f.write(s)
+    f.close()
+    logged()
+
+# functions for menus
+def OpenFile():
+    fname = askopenfilename(filetypes=(("Text Files", ".txt"), ("All Files", "*.*")))
+    f = open(fname, 'r')
+    Master = Toplevel()
+    text = f.read()
+    Label(Master, text=text).pack()
+    Master.maxsize(width=300, height=300)
+    Master.minsize(width=300, height=300)
+
+scrollx = Scrollbar(viewFrame, orient=HORIZONTAL)
+scrolly = Scrollbar(viewFrame, orient=VERTICAL)
