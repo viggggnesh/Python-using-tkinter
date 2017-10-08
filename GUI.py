@@ -29,7 +29,7 @@ def DatabaseAdd():
     cursor.execute("INSERT INTO 'INVENTORY'(prodName, prodCode, prodWeig, prodQty, prodDate, prodDispatch, Delivery, Dispatch, Category, Fragile, FastShip, Supervisor) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                    (str(v1.get()), str(v2.get()), str(v3.get()), str(v4.get()), str(v5.get()), str(v6.get()), str(v7.get()), str(v8.get()), str(v.get()), str(var.get()), str(var1.get()), str(log.get())))
     conn.commit()
-    v1.set(""), v2.set(""), v3.set(""), v4.set(""), v5.set(""), v6.set(""), v7.set(""), v8.set(""), v.set(0), var.set(""), var1.set(""), log.set("")
+    v1.set(""), v2.set(""), v3.set(""), v4.set(""), v5.set(""), v6.set(""), v7.set(""), v8.set(""), v.set("Appliances"), var.set("0"), var1.set("0"), log.set("")
     cursor.close()
     conn.close()
     logged()
@@ -127,7 +127,6 @@ def Exit():
         cursor.close()
         conn.close()
         exit()
-
 
 def Chnglog():
     tm.showinfo("Changelog", "v1.0 - Only GUI \nv1.1 - Accepts inputs and saves it to text file \nv1.2 - Open previous logs\nv1.3 - SQLite3 Database integration")
