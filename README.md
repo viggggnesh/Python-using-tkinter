@@ -5,6 +5,7 @@
 
 A Python GUI project using tkinter module.
 Its my first project so not very thorough with the finer details.
+It's fairly beginner stuff. 
 Working on linking this with SQLite3 Databse for Python
 All data will be stored to log.txt
 Open.txt was just a file created for testing
