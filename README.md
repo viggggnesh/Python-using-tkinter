@@ -12,3 +12,4 @@ Open.txt was just a file created for testing
 UPDATE: 
 SQLite3 has been configured for this application. 
 Text files no longer required.
+Search works properly.
